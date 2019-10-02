@@ -1,5 +1,8 @@
 FROM ubuntu:bionic
 
+ENV DEBIAN_FRONTEND=noninteractive \
+    TERM=xterm
+
 ENV NODEJS_VERSION=10.16.3 \
     PATH=$PATH:/opt/node/bin
 
